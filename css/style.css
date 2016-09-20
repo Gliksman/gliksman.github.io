@@ -1,0 +1,35 @@
+body,
+html {
+  font-family: "Arial"
+}
+
+header {
+  background-color: #333;
+}
+
+.navigation {
+  margin: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.navigation li a {
+  color: #ddd;
+  display: block;
+  padding: 1em;
+  margin: 0;
+  font-weight: bold;
+  font-size: 1em;
+  text-decoration: none;
+}
+
+.navigation li a:hover {
+  background-color: #000;
+  color: #fff;
+}
