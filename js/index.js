@@ -18,4 +18,4 @@ window.onmousemove = function(e) {
     var wee = new SpeechSynthesisUtterance('wee');
     window.speechSynthesis.speak(wee);
   }
-};
+}
