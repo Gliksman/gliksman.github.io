@@ -14,8 +14,17 @@ window.onmousemove = function(e) {
   mousespeedY = e.clientY
 
   console.log(mousespeed)
-  if (mousespeed > 350) {
+  if (mousespeed > 500) {
     var wee = new SpeechSynthesisUtterance('wee');
     window.speechSynthesis.speak(wee);
   }
+};
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].onclick = function(){
+        this.classList.toggle("active");
+        this.nextElementSibling.classList.toggle("show");
+    }
 }
